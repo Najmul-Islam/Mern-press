@@ -4,10 +4,13 @@ import { FaBars, FaSearch, FaUser } from "react-icons/fa";
 
 const Navbar = ({ handleNavbarToggle }) => {
   const [toggle, setToggle] = useState(false);
+  const handleToggle = (e) => {
+    setToggle(toggle);
+  };
 
   return (
     <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <Link className="navbar-brand ps-3" to="index.html">
+      <Link className="navbar-brand ps-3" to="/">
         Start Bootstrap
       </Link>
 
@@ -51,7 +54,7 @@ const Navbar = ({ handleNavbarToggle }) => {
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded={toggle}
-            onClick={() => setToggle(!toggle)}
+            onClick={handleToggle}
           >
             <FaUser />
           </Link>

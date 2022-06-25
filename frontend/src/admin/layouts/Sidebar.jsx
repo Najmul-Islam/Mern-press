@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import DashboardNav from "./sidebarItems/DashboardNav";
 import PostsNav from "./sidebarItems/PostsNav";
 import MediaNav from "./sidebarItems/MediaNav";
@@ -22,13 +22,8 @@ const Sidebar = () => {
             <DashboardNav />
             <PostsNav />
             <MediaNav />
-            <PagesNav />
             <CommentsNav />
-            <AppearanceNav />
-            <PluginsNav />
             <UsersNav />
-            <ToolsNav />
-            <SettingsNav />
           </div>
         </div>
         <div className="sb-sidenav-footer">

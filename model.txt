@@ -1,0 +1,32 @@
+*post model
+    guid:
+    slug:
+    status:
+    type:
+    link:
+    title:
+    context:
+    excerpt:
+    author:
+    featuredMedia:
+    categories:
+    tags:
+    authorInfo:
+    commentInfo
+
+* media model
+    guid:
+    slug:
+    type:
+    link:
+    title:
+    author:
+    commentStatus:
+    meta:
+    description:
+    caption:
+    altText:
+    mediaType:
+    mimetype:
+    post:
+    sourceUrl:
